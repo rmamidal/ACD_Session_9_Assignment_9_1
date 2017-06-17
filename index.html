@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Carouse Demo | Session 9 Assignment 9.1</title>
+    
+    <!-- Including jquery and bootstrap javascript files-->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src='bootstrap/js/bootstrap.min.js'></script>
+    
+    <!-- Including Bootstrap css file-->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+
+    <!-- Internal styles-->
+    <style type="text/css">
+      .item {
+        height: 450px;
+      }
+    </style>
+
+  </head>
+  <body>
+  <div class="container">
+  	<h1>Bootstrap Carousel Demo</h1>
+      <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Carousel images indicator -->
+        <ol class="carousel-indicators" >
+         <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#imageCarousel" data-slide-to="1" ></li>
+          <li data-target="#imageCarousel" data-slide-to="2" ></li>
+          <li data-target="#imageCarousel" data-slide-to="3" ></li>
+        </ol>
+
+        <!-- Carousel image list -->
+        <div class="carousel-inner">
+          <div class="item active ">
+            <img src="images/image1.jpg" alt="Image 1" />
+         </div>
+          
+          <div class="item">
+            <img src="images/image2.jpg" alt="Image 2" />
+          </div>
+        
+          <div class="item">
+           <img src="images/image3.jpg" alt="Image 3" />
+         </div>
+        
+          <div class="item">
+           <img src="images/image4.jpg" alt="Image 4" />
+          </div>
+        </div>
+
+        <!-- Carousel image controls -->
+        <a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#imageCarousel" class="carousel-control right" data-slide="next">  <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div><!-- #imageCarousel-->
+    </div><!-- .container-->
+  </body>
+</html>
+ 
